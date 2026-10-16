@@ -1,0 +1,94 @@
+generated: '2026-10-16'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 4
+  other_domain: 2
+  platform: 1
+  roles:
+  - api
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.flows360.co
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: flows360.co
+  role: api
+  relation: own
+- host: flows360.co
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: flows360.co
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: studio.flows360.app
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: flows360.app
+  role: other
+  relation: other-domain
+- host: support.flows360.co
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: flows360.co
+  role: support
+  relation: own
+- host: www.flows360.co
+  found_by:
+  - pointer
+  - apis[]
+  - docs-index
+  types:
+  - Compliance
+  - Webhooks
+  - GettingStarted
+  - Website
+  - Documentation
+  - Blog
+  - Pricing
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - docs
+  registrable_domain: flows360.co
+  role: website
+  relation: own
+- host: your-metabase-instance.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: your-metabase-instance.com
+  role: other
+  relation: other-domain

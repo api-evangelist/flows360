@@ -1,0 +1,16 @@
+generated: '2026-10-16'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: flows360.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 26 14:34:53 2026 GMT
+  hsts: false
+domains:
+- domain: flows360.co
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: quarantine

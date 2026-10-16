@@ -1,0 +1,55 @@
+generated: '2026-10-16'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.flows360.co/pricing/
+sources:
+- https://www.flows360.co/pricing/
+name: Flows360 pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Launch
+  price_text: £659 / month
+  price: 659
+  billing_period: monthly
+  description: Close the gap you already know about.
+  features:
+  - 5 users included
+  - 50,000 monthly workflow capacity included
+  - Unlimited workflow creation
+  - All Core connectors included
+  - Structured field mappings
+  - Bi-directional sync foundation
+  - Baseline workflow visibility
+  - 30-day log retention and admin usage view
+  - 2 hrs onboarding included, one-off
+- name: Scale
+  price_text: £1,189 / month
+  price: 1189
+  billing_period: monthly
+  description: Find the ones nobody has noticed yet.
+  features:
+  - 10 users included
+  - 150,000 monthly workflow capacity included
+  - Unlimited workflow creation
+  - All Core connectors included
+  - Structured field mappings
+  - Bi-directional sync foundation
+  - Advanced workflow visibility and usage insights
+  - Extended log retention and higher concurrency
+  - 5 hrs onboarding included, one-off
+- name: Complex
+  price_text: Custom
+  description: Build it so they do not open.
+  features:
+  - Everything in Launch, plus what your project actually needs.
+  - Architecture and rollout designed around your environment
+  - Private cloud, your own infrastructure, or on premise
+  - Security, data residency and access controls scoped to your requirements
+  - Commercial terms shaped around the fit
+  - Your own data lake, built new or adopted from what you already run
+  - Routing simple enough that your team can actually run it
+  - Attribution modelling
+  - Custom onboarding hours
+  - Custom account support
+docs: https://www.flows360.co/pricing/

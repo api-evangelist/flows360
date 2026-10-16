@@ -1,0 +1,39 @@
+generated: '2026-10-16'
+method: probed
+source: https://www.flows360.co/privacy-policy/
+signals:
+  subprocessors:
+    evidence:
+      - source: https://www.flows360.co/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Our current customer-data subprocessors are maintained at https://www.flows360.co/subprocessors/. We do not sell personal data."
+    note: Lists location of subprocessors list, confirms use of third‑party processors.
+  data_retention:
+    evidence:
+      - source: https://www.flows360.co/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We retain personal data only as long as reasonably necessary for its purpose. Periods vary according to contractual, legal, security, support and service requirements."
+    note: States retention policy, no fixed period.
+  data_residency:
+    evidence:
+      - source: https://www.flows360.co/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Where personal data is transferred internationally and safeguards are required, we use legally recognised mechanisms such as UK adequacy regulations, the UK International Data Transfer Agreement, the UK Addendum to EU Standard Contractual Clauses, EU Standard Contractual Clauses where applicable, or another legally permitted safeguard."
+    note: Describes mechanisms for international transfers.
+  data_subject_request:
+    evidence:
+      - source: https://www.flows360.co/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Depending on applicable law and circumstances, you may have rights to access, correction, deletion, restriction, objection, portability, withdrawal of consent and objection to direct marketing."
+    note: Enumerates data subject rights.
+  incident_notification:
+    evidence:
+      - source: https://www.flows360.co/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We use technical and organisational measures designed to protect personal data. ... No online system can be guaranteed completely secure."
+    note: No explicit breach notification clause found; only general security statement.

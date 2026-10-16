@@ -1,23 +1,122 @@
 aid: flows360
+
 name: Flows360
-description: 'Flows360 is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Flows360 provides a comprehensive workflow automation platform that enables businesses to design, execute, and monitor complex processes
+  across multiple systems. The solution offers a visual builder, extensive integrations, real-time analytics, and robust security features, helping
+  organizations streamline operations, reduce manual effort, and improve efficiency. With a focus on scalability and flexibility, Flows360 serves
+  enterprises across various industries, delivering customizable automation capabilities and enterprise-grade support.
+
+image: https://www.flows360.co/wp-content/uploads/2026/03/cropped-1c.-Full-Colour-Logo-2000pxl-NoBackGround-PNG-300x88.png
+
 url: https://raw.githubusercontent.com/api-evangelist/flows360/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-16 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-16'
+
 modified: '2026-10-16'
+
 tags:
 - Company
-apis: []
+- Automation
+- Workflow
+- Integration
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/flows360-plans-pricing.yml
+- type: Spectral
+  url: rules/flows360-rules.yml
+- type: JSONLD
+  url: json-ld/flows360-context.jsonld
+- type: Vocabulary
+  url: vocabulary/flows360-vocabulary.yml
+- type: DataModel
+  url: data-model/flows360-data-model.yml
+- type: ChangeLog
+  url: changelog/flows360-changelog.yml
+- type: Compliance
+  url: https://www.flows360.co/platform/security-governance/
+- type: Conformance
+  url: conformance/flows360-conformance.yml
+- type: LLMsTxt
+  url: llms/flows360-llms.txt
+- type: WellKnown
+  url: well-known/flows360-well-known.yml
+- type: Hosts
+  url: hosts/flows360-hosts.yml
+- type: Webhooks
+  url: https://www.flows360.co/integrations/webhook/
+- type: Support
+  url: https://support.flows360.co/
+- type: GettingStarted
+  url: https://www.flows360.co/get-started/
+- type: GitHubOrganization
+  url: https://github.com/flows360
+- type: TrustCenter
+  url: security/flows360-trust-center.yml
+- type: DomainSecurity
+  url: security/flows360-domain-security.yml
 - type: Website
-  url: https://flows360.co/
+  url: https://www.flows360.co/
+- type: Documentation
+  url: https://www.flows360.co/docs/
+- type: Blog
+  url: https://www.flows360.co/blog/
+- type: Pricing
+  url: https://www.flows360.co/pricing/
+- type: PrivacyPolicy
+  url: https://www.flows360.co/privacy-policy/
+- type: TermsOfService
+  url: https://www.flows360.co/terms-of-service/
+
+apis:
+- name: Flows360 API
+  description: Integration documentation for Flows360 provides technical references and guides to implement connected workflows.
+  humanURL: https://www.flows360.co/docs/
+  aid: flows360:flows360-api-2
+- aid: flows360:flows360-api
+  name: Flows360 API
+  description: 'Flows360 API as documented publicly: 3 operations. Contract generated from the documentation by API Evangelist (2026-10-16); not
+
+    the provider''s own document.'
+  humanURL: https://www.flows360.co/docs/coupa
+  baseURL: https://your-metabase-instance.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/flows360-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-request-schema.json
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation pages exist but no OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contracts were found.
+  evidence:
+  - url: https://www.flows360.co/docs/
+    status: 200
+  checked: '2026-10-16'
+x-enrichment:
+  date: '2026-10-16'
+  status: enriched
+  artifacts_added: 22
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

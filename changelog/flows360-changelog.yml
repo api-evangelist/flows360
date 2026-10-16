@@ -1,0 +1,15 @@
+generated: '2026-10-16'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.flows360.co/docs/aws_bedrock/
+sources:
+- https://www.flows360.co/docs/aws_bedrock/
+entries:
+- breaking: false
+  highlights:
+  - Version 0.3.0
+  - Last updated September 28, 2026
+  date: '2026-09-28'
+current_version: 0.3.0
+note: The page lists only the current version and last updated date; no detailed changelog entries are provided.
+docs: https://www.flows360.co/docs/aws_bedrock/

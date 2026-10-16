@@ -1,0 +1,24 @@
+# Flows360
+
+> Flows360 Studio helps operational teams connect fragmented SaaS systems, automate workflows, improve data visibility, and replace manual workarounds with governed, AI-assisted workflow orchestration.
+
+Website: https://www.flows360.co
+
+## Important Pages
+
+- [Flows360](https://www.flows360.co/): Enterprise workflow orchestration and iPaaS platform for operational teams
+- [Flows360 Studio](https://studio.flows360.app/): Product application for building and managing governed workflow automations
+- [Platform](https://www.flows360.co/platform/): Overview of the Flows360 platform for connecting systems and automating operations
+- [Workflow Automation](https://www.flows360.co/platform/workflow-automation/): Automate multi-step operational workflows across disconnected SaaS tools
+- [Integrations](https://www.flows360.co/integrations/): Connect the SaaS tools your teams already use
+- [RevOps Automation](https://www.flows360.co/solutions/revops/): Workflow automation and system integration for revenue operations teams
+- [Customer Success Operations](https://www.flows360.co/solutions/customer-success-operations/): Improve handoffs, renewals, customer data visibility, and operational workflows
+- [Finance Operations](https://www.flows360.co/solutions/finance-operations/): Automate finance operations workflows and improve visibility across systems
+- [Sales Operations](https://www.flows360.co/solutions/sales-operations/): Connect sales systems and automate sales operations workflows
+- [Pricing](https://www.flows360.co/pricing/): Flows360 pricing and plan information
+- [Workflow Diagnostic](https://www.flows360.co/diagnostic/): Identify workflow gaps, system friction, and automation opportunities
+- [Speak to an Expert](https://www.flows360.co/book-a-demo/): Speak with Flows360 about workflow orchestration and operational automation
+
+## About llms.txt
+
+This file follows the llms.txt proposed standard (https://llmstxt.org). Save it as `llms.txt` at the root of your site (e.g. https://example.com/llms.txt).

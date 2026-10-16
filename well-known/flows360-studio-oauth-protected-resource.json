@@ -1,0 +1,1 @@
+{"resource":"https://studio.flows360.app/api/public/mcp","authorization_servers":["https://studio.flows360.app/"],"scopes_supported":["openid","profile","email","offline_access"],"bearer_methods_supported":["header"],"resource_documentation":"https://studio.flows360.app/help/setup-claude-desktop"}
