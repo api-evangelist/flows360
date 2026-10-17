@@ -1,0 +1,26 @@
+{
+  "provider": "flows360",
+  "sources": [
+    "_ae-authored/flows360-openapi-generated.yml"
+  ],
+  "outputs": [
+    "flows360-purchase-orders-api-openapi.yml",
+    "flows360-session-api-openapi.yml",
+    "flows360-suppliers-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "flows360-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "flows360-openapi-generated.yml: tagged paths PUT /api/purchase_orders/{id}/{idid} -> Purchase Orders",
+    "flows360-openapi-generated.yml: tagged paths POST /api/session -> Session",
+    "flows360-openapi-generated.yml: tagged paths GET /api/suppliers/{id}/supplier_sites -> Suppliers",
+    "flows360-openapi-generated.yml: declared missing tag: Purchase Orders",
+    "flows360-openapi-generated.yml: declared missing tag: Session",
+    "flows360-openapi-generated.yml: declared missing tag: Suppliers",
+    "apis.yml register: written (+3 apis, 4 total)"
+  ],
+  "skipped": []
+}

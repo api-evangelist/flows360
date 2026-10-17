@@ -87,25 +87,53 @@ common:
 
 apis:
 - name: Flows360 API
-  description: Integration documentation for Flows360 provides technical references and guides to implement connected workflows.
+  description: >-
+    Integration documentation for Flows360 provides technical references and guides to implement connected
+    workflows.
   humanURL: https://www.flows360.co/docs/
   aid: flows360:flows360-api-2
-- aid: flows360:flows360-api
-  name: Flows360 API
-  description: 'Flows360 API as documented publicly: 3 operations. Contract generated from the documentation by API Evangelist (2026-10-16); not
-
-    the provider''s own document.'
-  humanURL: https://www.flows360.co/docs/coupa
+- aid: flows360:flows360-purchase-orders-api
+  name: Flows360 Purchase Orders API
+  description: The Purchase Orders API from Flows360 — 1 operation(s) for purchase orders.
+  humanURL: https://www.flows360.co/docs/
   baseURL: https://your-metabase-instance.com
+  tags:
+  - Purchase Orders
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/flows360-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/flows360-purchase-orders-api-openapi.yml
   - type: JSONSchema
     url: json-schema/flows360-post-api-session-request-schema.json
   - type: JSONSchema
     url: json-schema/flows360-post-api-session-response-schema.json
-
+- aid: flows360:flows360-session-api
+  name: Flows360 Session API
+  description: The Session API from Flows360 — 1 operation(s) for session.
+  humanURL: https://www.flows360.co/docs/
+  baseURL: https://your-metabase-instance.com
+  tags:
+  - Session
+  properties:
+  - type: OpenAPI
+    url: openapi/flows360-session-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-request-schema.json
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-response-schema.json
+- aid: flows360:flows360-suppliers-api
+  name: Flows360 Suppliers API
+  description: The Suppliers API from Flows360 — 1 operation(s) for suppliers.
+  humanURL: https://www.flows360.co/docs/
+  baseURL: https://your-metabase-instance.com
+  tags:
+  - Suppliers
+  properties:
+  - type: OpenAPI
+    url: openapi/flows360-suppliers-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-request-schema.json
+  - type: JSONSchema
+    url: json-schema/flows360-post-api-session-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

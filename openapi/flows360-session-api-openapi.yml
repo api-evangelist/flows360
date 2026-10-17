@@ -1,0 +1,62 @@
+openapi: 3.2.0
+info:
+  title: Flows360 Session API
+  version: '2026-10-16'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-16: 3 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Flows360 has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 2
+    pages-with-code: 1
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-16'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.flows360.co/docs/coupa
+  - https://www.flows360.co/docs/metabase
+servers:
+- url: https://your-metabase-instance.com
+tags:
+- name: Session
+paths:
+  /api/session:
+    post:
+      operationId: post_api_session
+      tags:
+      - Session
+      summary: POST /api/session
+      x-source: https://www.flows360.co/docs/metabase
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiSessionRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiSessionResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl Request: ```bash curl -X POST -H "Content-Type: application/json" -d ''{"username": "your-email@example.com", "password": "your-password"}'' https://your-metabase-instance.com/api/session ``` Extract the Token : The API will respond with a JSON object containing an id field. This id is your session token. Example Response: ```json { "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef" } ``` Configure t'
+components:
+  schemas:
+    PostApiSessionRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+    PostApiSessionResponse:
+      type: object
+      properties:
+        id:
+          type: string
