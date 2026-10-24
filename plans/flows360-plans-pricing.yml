@@ -53,3 +53,28 @@ plans:
   - Custom onboarding hours
   - Custom account support
 docs: https://www.flows360.co/pricing/
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Launch
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Scale
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Complex
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
